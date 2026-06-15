@@ -29,7 +29,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              linkedin.com/in/divya-hamshini-viknesh-159460269
+              linkedin.com/in/divya-hamshini
             </a>
           </p>
         </div>
