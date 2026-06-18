@@ -29,7 +29,7 @@ const Hero = () => {
             </a>
             <span>·</span>
             <a
-              href="https://www.linkedin.com/in/divya-hamshini-viknesh-159460269/"
+              href="www.linkedin.com/in/divya-hamshini"
               target="_blank"
               rel="noreferrer"
             >
