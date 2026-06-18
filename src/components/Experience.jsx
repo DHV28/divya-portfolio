@@ -11,7 +11,7 @@ const experiences = [
   {
     role: "President",
     org: "IEEE Monash Malaysia Student Branch",
-    period: "Dec 2025 – Present · Selangor, Malaysia",
+    period: "Jun 2026 – Present · Selangor, Malaysia",
     desc: "Leading technical events, hackathons, and student workshops. Organizing coding competitions and connecting students with tech industry professionals."
   }
 ];
