@@ -32,7 +32,7 @@ const projects = [
     readme: "Creative Extension — Sabotage Route\n\nA player may spend their entire turn placing temporary construction on an unclaimed route. While under construction, the route requires one extra train card to claim, and the effect lasts for one full round.\n\nFerry routes are excluded from sabotage, as they already have locomotive card requirements — combining both mechanics would make them too difficult to claim.\n\nEach player may only use their sabotage action once per game. This adds a strategic layer, letting players disrupt opponents' plans at a critical moment.",
     icon: "🚂",
     links: {
-      download: "/TicketToRide.jar"
+      download: "/divya-portfolio/TicketToRide.jar"
     }
   },
   {
