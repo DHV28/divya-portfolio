@@ -2,6 +2,47 @@ import React, { useState } from "react";
 import SectionTitle from "./SectionTitle.jsx";
 import ScrollReveal from "./ScrollReveal.jsx";
 
+const TicketToRideReadme = () => (
+  <div style={{ fontSize: "0.82rem", lineHeight: "1.7" }}>
+    <p style={{ marginBottom: "0.75rem" }}>
+      <strong>🖥️ How to Run</strong>
+    </p>
+    <p style={{ marginBottom: "0.5rem" }}>
+      Requires <strong>Java 21</strong> — verify with <code>java -version</code>.{" "}
+      <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" rel="noreferrer" style={{ color: "var(--accent, #a78bfa)" }}>
+        Download here
+      </a>{" "}
+      if needed.
+    </p>
+    <ol style={{ paddingLeft: "1.2rem", marginBottom: "0.75rem" }}>
+      <li>Download <code>TicketToRide.jar</code> below.</li>
+      <li>
+        <strong>🪟 Windows:</strong> Right-click the JAR in File Explorer → <em>Open in Terminal</em>, then run:
+        <br />
+        <code style={{ display: "inline-block", marginTop: "0.25rem", background: "rgba(255,255,255,0.08)", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>java -jar TicketToRide.jar</code>
+      </li>
+      <li>
+        <strong>🍎 macOS:</strong> Open Terminal, navigate to the JAR, and run:
+        <br />
+        <code style={{ display: "inline-block", marginTop: "0.25rem", background: "rgba(255,255,255,0.08)", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>java -jar TicketToRide.jar</code>
+        <br />
+        <span style={{ opacity: 0.7 }}>Security warning? Go to System Settings → Privacy &amp; Security → Open Anyway.</span>
+      </li>
+    </ol>
+
+    <p style={{ marginBottom: "0.5rem" }}>
+      <strong>🎮 Creative Extension — Sabotage Route</strong>
+    </p>
+    <p style={{ marginBottom: "0.4rem" }}>
+      A player may spend their entire turn placing temporary construction on an unclaimed route. While under construction, the route requires one extra train card to claim, and the effect lasts for one full round.
+    </p>
+    <p style={{ marginBottom: "0.4rem" }}>
+      Ferry routes are excluded — they already require locomotive cards, and combining both would make them too hard to claim.
+    </p>
+    <p>Each player may only sabotage once per game, adding a strategic layer to disrupt opponents at a critical moment.</p>
+  </div>
+);
+
 const projects = [
   {
     name: "PrimeTask – Agile Task Management Web App",
@@ -29,7 +70,7 @@ const projects = [
     tag: "Team Project",
     tech: ["Java"],
     desc: "A digital implementation of the classic Ticket to Ride board game. Play the full game with route-building, train card management, and destination tickets.",
-    readme: "Creative Extension — Sabotage Route\n\nA player may spend their entire turn placing temporary construction on an unclaimed route. While under construction, the route requires one extra train card to claim, and the effect lasts for one full round.\n\nFerry routes are excluded from sabotage, as they already have locomotive card requirements — combining both mechanics would make them too difficult to claim.\n\nEach player may only use their sabotage action once per game. This adds a strategic layer, letting players disrupt opponents' plans at a critical moment.",
+    readme: <TicketToRideReadme />,
     icon: "🚂",
     links: {
       download: "/divya-portfolio/TicketToRide.jar"
@@ -85,9 +126,6 @@ const ProjectCard = ({ project }) => {
                   padding: "0.75rem",
                   background: "rgba(255,255,255,0.04)",
                   borderRadius: "8px",
-                  fontSize: "0.82rem",
-                  lineHeight: "1.6",
-                  whiteSpace: "pre-line",
                   color: "inherit",
                 }}
               >
@@ -126,7 +164,7 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
   return (
     <section className="section">
-      <SectionTitle id="projects" label="Projects" title="Things I’ve built" />
+      <SectionTitle id="projects" label="Projects" title="Things I've built" />
       <div className="cards-grid">
         {projects.map((project, index) => (
           <ScrollReveal key={project.name} delay={index * 100}>
