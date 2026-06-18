@@ -19,6 +19,11 @@ const Achievements = () => {
               16-hour hackathon involving 6 universities in Malaysia.
             </li>
             <li>
+              🏆 <strong>Finalist – Monash Coding League 2026</strong>
+              <br />
+              Reached the finals of Monash University's competitive coding league.
+            </li>
+            <li>
               🤖 <strong>Participant – IEEEXtreme</strong>
               <br />
               Global 24-hour competitive programming challenge.

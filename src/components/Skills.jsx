@@ -15,9 +15,12 @@ const Skills = () => {
             <li>Java</li>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Next.js</li>
+            <li>SQL</li>
             <li>C++</li>
             <li>HTML &amp; CSS</li>
             <li>Swift</li>
+            <li>MIPS Assembly</li>
           </ul>
         </div>
         </ScrollReveal>
@@ -52,6 +55,8 @@ const Skills = () => {
           <div className="skill-card">
           <h3>Tools &amp; Technologies</h3>
           <ul>
+            <li>Supabase</li>
+            <li>Tailwind CSS</li>
             <li>Selenium (web scraping &amp; automation)</li>
             <li>IntelliJ IDEA &amp; PyCharm</li>
             <li>VS Code</li>

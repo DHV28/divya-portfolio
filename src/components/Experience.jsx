@@ -9,7 +9,7 @@ const experiences = [
     desc: "Developing web-based software solutions, contributing to UI design, feature implementation, and user story mapping in a hybrid environment."
   },
   {
-    role: "Vice President",
+    role: "President",
     org: "IEEE Monash Malaysia Student Branch",
     period: "Dec 2025 – Present · Selangor, Malaysia",
     desc: "Leading technical events, hackathons, and student workshops. Organizing coding competitions and connecting students with tech industry professionals."
